@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    CommonModule,
+    CommonModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
