@@ -16,10 +16,12 @@ export const initialState: AppState = {
 export function miReducer(state: AppState = initialState, action: Action) {
     console.log(action);
     switch (action.type) {
-        // CASE: Si manejas una acción, debes devolver un nuevo estado:
         // case '[App] Cambiar Mensaje':
         //    return { ...state, mensaje: 'Mensaje Cambiado' };
-
+        case 'SPANISH':
+            return { ...state, mensaje: 'Spanish' };
+        case 'ENGLISH':
+            return { ...state, mensaje: 'Hello World' };
         default:
             // Si no se reconoce la acción, devuelve el estado actual
             return state;

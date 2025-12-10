@@ -30,6 +30,6 @@ export class App {
   }
 
   englishMessage(){
-    this.store.dispatch({ type: 'INGLISH' });
+    this.store.dispatch({ type: 'ENGLISH' });
   }
 }

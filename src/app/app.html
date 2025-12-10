@@ -6,9 +6,8 @@
       <button class="btn btn-success" (click)="englishMessage()">Cambiar a Inglés</button>
     </div>
     <div class="card-body">
-      Mi App
       <router-outlet></router-outlet>
-      <!-- <p>Mensaje: {{ dato$ | async }}</p> -->
+      <p>Mensaje: {{ (dato$ | async)?.mensaje }}</p>
     </div>
   </div>
 </div>
