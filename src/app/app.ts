@@ -5,6 +5,8 @@ import { AppState } from './app.reducer';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 
+import { spanishAction, englishAction } from './mensaje.action';
+
 @Component({
   selector: 'app-root',
   imports: [
@@ -26,10 +28,10 @@ export class App {
 
   spanishMessage(){
     // Despacha una acción para cambiar el mensaje en español
-    this.store.dispatch({ type: 'SPANISH' });
+    this.store.dispatch( spanishAction({ payload: 'Los colores' }) );
   }
 
   englishMessage(){
-    this.store.dispatch({ type: 'ENGLISH' });
+    this.store.dispatch( englishAction({ payload: 'Yellow' }) );
   }
 }

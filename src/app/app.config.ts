@@ -12,6 +12,6 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideStore({ mensaje: miReducer }),
-    provideStoreDevtools({ maxAge: 4 })
+    provideStoreDevtools({ maxAge: 10 })
   ]
 };
